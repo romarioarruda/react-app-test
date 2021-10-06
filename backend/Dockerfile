@@ -1,10 +1,9 @@
 FROM node:14-alpine
 
 WORKDIR /react-app/backend
+COPY package.json yarn.lock ./
 
 COPY . .
 
-RUN cd /react-app/backend && \
-    npm install
-
 EXPOSE 3001
+CMD ["yarn", "start"]
