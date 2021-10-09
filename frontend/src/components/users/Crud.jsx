@@ -103,7 +103,7 @@ export default class UserCrud extends Component {
         <div className="row">
           <div className="col-12 d-flex justify-content-end">
             <button className="btn btn-primary" onClick={e => this.save(e)}>Salvar</button>
-            <button className="btn btn-secondary ml-2" onClick={e => this.clear(e)}>Cancelar</button>
+            <button className="btn btn-danger ml-2" onClick={e => this.clear(e)}>Cancelar</button>
           </div>
         </div>
       </div>
